@@ -1,0 +1,26 @@
+.fDisplay{
+    font: 500 9rem/1 "Rubik", sans-serif; 
+
+    /* 9rem = 144 px */
+}
+.fHeadingLBold{
+    font: 700 4rem/1 "Rubik", sans-serif; 
+}
+.fHeadingLRegular{
+    font: 400 4rem/1 "Rubik", sans-serif; 
+}
+
+.fHeadingM{
+    font: 500 2.25rem/1 "Rubik", sans-serif; 
+}
+.fHeadingS{
+    font: 500 1.75rem/1 "Rubik", sans-serif; 
+}
+
+.fBodyM{
+    font: 400 0.75rem/1.5 "Rubik", sans-serif; 
+}
+
+.fBodyS{
+    font: italic 400 0.75rem/1.5 "Rubik", sans-serif; 
+}
