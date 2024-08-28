@@ -1,5 +1,18 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+ 
+  background-image: url("../assets/pattern-background-desktop-light.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+body{
+  background-color: #ffffff;
 }
 
 .container{
@@ -10,7 +23,18 @@
 .titleAndSwitcher{
     display: flex;
     justify-content: space-between; 
-     padding-top: 1rem;
+     padding-top: 5rem;
+     padding-bottom: 5rem;
+}
+
+.titleandIconDiv{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titleandIconDiv > p{
+  font-weight: normal;
 }
 
 .themeSwitcher{

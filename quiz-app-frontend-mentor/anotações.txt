@@ -1,0 +1,9 @@
+
+
+fazer o html
+
+fazer lógica que busca as questões , os textos , o numero da questão e seta no state
+
+fazer lógica de quando responder ele trocar de questão na tela
+
+fazer a lógica da progressBar
