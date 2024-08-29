@@ -109,3 +109,13 @@ body{
   .icon{
     width: 30px;
   }
+  .mainQuestionAndOptionDiv{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .optionAndButtonDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }

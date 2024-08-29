@@ -1,0 +1,12 @@
+.letterBg{
+    background-color: #F4F6FA;;
+    padding: 0.6rem;
+}
+
+.divOption{
+    display: flex;
+    gap: 2rem;
+    width: 30rem;
+    box-shadow: 0 16px 40px 0 rgba(143,160,193,14%);
+    padding: 0.8rem;
+}
