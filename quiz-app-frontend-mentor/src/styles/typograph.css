@@ -16,7 +16,9 @@
 .fHeadingS{
     font: 500 1.75rem/1 "Rubik", sans-serif; 
 }
-
+.fHeadingSminus{
+    font: 500 1.2rem/1 "Rubik", sans-serif; 
+}
 .fBodyM{
     font: 400 0.75rem/1.5 "Rubik", sans-serif; 
 }

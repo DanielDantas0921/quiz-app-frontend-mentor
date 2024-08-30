@@ -6,6 +6,7 @@ import "../src/styles/globals.css"
 import "../src/styles/typograph.css"
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

@@ -4,9 +4,18 @@
 }
 
 .divOption{
-    display: flex;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
     gap: 2rem;
     width: 30rem;
     box-shadow: 0 16px 40px 0 rgba(143,160,193,14%);
     padding: 0.8rem;
+}
+.divOption img{
+    justify-self: end;
+}
+
+.textQuestion{
+    margin-top: 0.3rem;
 }

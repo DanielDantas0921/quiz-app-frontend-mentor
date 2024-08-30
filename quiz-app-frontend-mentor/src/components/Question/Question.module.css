@@ -1,3 +1,14 @@
+.divQuestion{
+    width: 30rem;
+}
+
+.divQuestion > h3{
+    margin-bottom: 2rem;
+}
+
+.divQuestion >h2{
+    margin-bottom: 10rem;
+}
 .progressBar{
     width: 200px;
     height: 3px;
