@@ -4,21 +4,18 @@ import Option from "../../components/Option/Option";
 import Question from "../../components/Question/Question";
 import data from "../../../data.json";
 import RightQuestions from "../../context/RightQuestions";
-import srcImg from "../../assets/icon-correct.svg"
+import iconSrcCorrect from "../../assets/icon-correct.svg";
+import iconSrcError from "../../assets/icon-error.svg";
 
 export default function HtmlQuestions() {
   const [currentQuestionNumber, setCurrentQuestionNumber] = useState(1);
   const [textButton, setTextButton] = useState("Submit Answer");
   const [answerOptionQuestion, setAnswerOptionQuestion] = useState(null);
   const boolQuestionConfirm = useRef(false);
-  const objRightQUestion = useContext(RightQuestions)
-  // const boolQuestionStyle = useRef(false)
-  // const [boolQuestionStyle, setBoolQUestionStyle] = useState(false)
-  const [srcIconImg, setSrcIconImg] = useState(null)
-  
+  const objRightQUestion = useContext(RightQuestions);
+  const [boolQuestionStyle, setBoolQuestionStyle] = useState(false);
+  const [srcIconImg, setSrcIconImg] = useState(null);
 
-  const iconSrcCorrect = "../../assets/icon-correct.svg"
-  const iconSrcError  = "../../assets/icon-error.svg"
 
   function getQuestion(currentQuestionNumberGet) {
     const dataJson = { data }.data;
@@ -34,7 +31,7 @@ export default function HtmlQuestions() {
   }
 
   function answerQuestion() {
-    console.log("estou caindo antes do if")
+    console.log("estou caindo antes do if");
     if (boolQuestionConfirm.current == false) {
       if (answerOptionQuestion == null) {
         console.log("estou caindo aqui");
@@ -43,20 +40,21 @@ export default function HtmlQuestions() {
       setTextButton("Next Question");
       boolQuestionConfirm.current = !boolQuestionConfirm.current;
       // boolQuestionStyle.current = !boolQuestionStyle
-      // setBoolQUestionStyle((currentState)=> !currentState )
-      setSrcIconImg((currentIcon)=> currentIcon = questionStyleSrc())
-      
+      setBoolQuestionStyle((currentState) => !currentState);
+      setSrcIconImg((currentIcon) => (currentIcon = questionStyleSrc()));
+
       if (getQuestion(currentQuestionNumber).options[answerOptionQuestion] == getQuestion(currentQuestionNumber).answer) {
-        objRightQUestion.setRightQuestions((currentNumber)=> currentNumber + 1)
-        boolQuestionCorrectStyle.current = !boolQuestionCorrectStyle.current
-      } else{
-        console.log("questão errada")
+        objRightQUestion.setRightQuestions((currentNumber) => currentNumber + 1);
+        boolQuestionCorrectStyle.current = !boolQuestionCorrectStyle.current;
+      } else {
+        console.log("questão errada");
       }
     } else {
       console.log(" o bol mudou de valor para true");
       setCurrentQuestionNumber((currentState) => (currentState = currentState + 1));
-      setTextButton("Submit Answer")
-      boolQuestionConfirm.current = !boolQuestionConfirm.current
+      setTextButton("Submit Answer");
+      boolQuestionConfirm.current = !boolQuestionConfirm.current;
+      setBoolQuestionStyle((currentState)=> !currentState)
     }
   }
 
@@ -64,26 +62,52 @@ export default function HtmlQuestions() {
     setAnswerOptionQuestion(numberOfLetter);
   }
 
-  function questionStyleSrc(){
-    if((getQuestion(currentQuestionNumber).options[answerOptionQuestion] == getQuestion(currentQuestionNumber).answer)){
-      return iconSrcCorrect
+  function questionStyleSrc(answerOptionQuestionStyle) {
+    if (answerOptionQuestionStyle == answerOptionQuestion ) {
+     
+      if (getQuestion(currentQuestionNumber).options[answerOptionQuestion] == getQuestion(currentQuestionNumber).answer) {
+        return iconSrcCorrect;
+      } else {
+        return iconSrcError;
+      }
+
     } else{
-      return iconSrcError
+      if(getQuestion(currentQuestionNumber).answer == getQuestion(currentQuestionNumber).options[answerOptionQuestionStyle]){
+        return iconSrcCorrect;
+      }
     }
   }
-  
 
   return (
     <div className="mainQuestionAndOptionDiv">
       <Question currentQuestion={currentQuestionNumber} textQuestion={getQuestion(currentQuestionNumber).questionName} />
       <div className="optionAndButtonDiv">
-        <Option letter="a" responseText={getQuestion(currentQuestionNumber).options[0]} letterOptionFun={() => letterOption(0)} srcImg={srcIconImg}  />
-        <Option letter="b" responseText={getQuestion(currentQuestionNumber).options[1]} letterOptionFun={() => letterOption(1)} srcImg={srcIconImg} />
-        <Option letter="c" responseText={getQuestion(currentQuestionNumber).options[2]} letterOptionFun={() => letterOption(2)} srcImg={srcIconImg}  />
-        <Option letter="d" responseText={getQuestion(currentQuestionNumber).options[3]} letterOptionFun={() => letterOption(3)} srcImg={srcIconImg}  />
+        <Option
+          letter="a"
+          responseText={getQuestion(currentQuestionNumber).options[0]}
+          letterOptionFun={() => letterOption(0)}
+          srcImg={boolQuestionStyle ? questionStyleSrc(0) : null}
+        />
+        <Option
+          letter="b"
+          responseText={getQuestion(currentQuestionNumber).options[1]}
+          letterOptionFun={() => letterOption(1)}
+          srcImg={boolQuestionStyle ? questionStyleSrc(1) : null}
+        />
+        <Option
+          letter="c"
+          responseText={getQuestion(currentQuestionNumber).options[2]}
+          letterOptionFun={() => letterOption(2)}
+          srcImg={boolQuestionStyle ? questionStyleSrc(2) : null}
+        />
+        <Option
+          letter="d"
+          responseText={getQuestion(currentQuestionNumber).options[3]}
+          letterOptionFun={() => letterOption(3)}
+          srcImg={boolQuestionStyle ? questionStyleSrc(3) : null}
+        />
         <Button text={textButton} answerQuestionFun={() => answerQuestion()} />
       </div>
-      <p>"Answer Option Question é: {answerOptionQuestion}"</p>
     </div>
   );
 }
