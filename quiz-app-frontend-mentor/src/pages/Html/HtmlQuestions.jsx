@@ -14,7 +14,6 @@ export default function HtmlQuestions() {
   const boolQuestionConfirm = useRef(false);
   const objRightQUestion = useContext(RightQuestions);
   const [boolQuestionStyle, setBoolQuestionStyle] = useState(false);
-  const [srcIconImg, setSrcIconImg] = useState(null);
 
 
   function getQuestion(currentQuestionNumberGet) {
@@ -41,7 +40,6 @@ export default function HtmlQuestions() {
       boolQuestionConfirm.current = !boolQuestionConfirm.current;
       // boolQuestionStyle.current = !boolQuestionStyle
       setBoolQuestionStyle((currentState) => !currentState);
-      setSrcIconImg((currentIcon) => (currentIcon = questionStyleSrc()));
 
       if (getQuestion(currentQuestionNumber).options[answerOptionQuestion] == getQuestion(currentQuestionNumber).answer) {
         objRightQUestion.setRightQuestions((currentNumber) => currentNumber + 1);
