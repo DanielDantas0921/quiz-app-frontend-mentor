@@ -119,3 +119,13 @@ body{
     flex-direction: column;
     gap: 1rem;
   }
+
+
+  #errorLetterBg{
+    background-color: #EE5454;
+    color: white;
+}
+
+.error{
+  border: 3px solid #EE5454;
+}

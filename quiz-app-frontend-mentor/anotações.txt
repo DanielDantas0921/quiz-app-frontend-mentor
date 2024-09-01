@@ -7,3 +7,8 @@ fazer lógica que busca as questões , os textos , o numero da questão e seta n
 fazer lógica de quando responder ele trocar de questão na tela
 
 fazer a lógica da progressBar
+
+------------------------------
+
+fazer a lógica de uma função que verifica o error para setar o letterBgError no id dos componentes e se possível adicionar um erro de borda no componente 
+

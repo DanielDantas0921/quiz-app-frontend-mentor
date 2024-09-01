@@ -6,6 +6,7 @@ import Css from "./pages/Css/Css";
 import Js from "./pages/Js/Js";
 import Accessibility from "./pages/Acessibility/Accessibility";
 import HtmlQuestions from "./pages/Html/HtmlQuestions";
+import HtmlResults from "./pages/Html/HmlResults";
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
                     {
                         index: true,
                         element: <HtmlQuestions/>
+                    },
+                    {
+                        path:"/HTML/Results",
+                        element: <HtmlResults/>
                     }
                 ]
             },
