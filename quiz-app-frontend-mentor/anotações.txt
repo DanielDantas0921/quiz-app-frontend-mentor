@@ -10,5 +10,7 @@ fazer a lógica da progressBar
 
 ------------------------------
 
-fazer a lógica de uma função que verifica o error para setar o letterBgError no id dos componentes e se possível adicionar um erro de borda no componente 
+fazer a lógica da progressBar
+
+ver como vai refatorar se vai criar um hook próprio para diminuir o código do HtmlQuestions
 
