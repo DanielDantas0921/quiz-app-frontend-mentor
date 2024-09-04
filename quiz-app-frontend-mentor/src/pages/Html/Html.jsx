@@ -8,8 +8,6 @@ export default function Html(){
     const [rightQuestions, setRightQuestions] = useState(0)
     return (
         <div className="container">
-
-        
         <TitleAndSwitcher iconTitle={htmlIcon} title="Html" />
         <RightQuestions.Provider value={{rightQuestions,setRightQuestions}}>
         <Outlet />

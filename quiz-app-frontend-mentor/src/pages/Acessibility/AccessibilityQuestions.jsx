@@ -3,7 +3,7 @@ import Option from "../../components/Option/Option";
 import Question from "../../components/Question/Question";
 import useQuizz from "../../hooks/useQuizz";
 
-export default function HtmlQuestions() {
+export default function AccessibilityQuestions() {
   const {
     currentQuestionNumber,
     textButton,
@@ -14,7 +14,7 @@ export default function HtmlQuestions() {
     errorComponentLetterAndBorder,
     getQuestion,
     boolLetterAndBorderError
-  } = useQuizz("HTML");
+  } = useQuizz("Accessibility");
 
   return (
     <div className="mainQuestionAndOptionDiv">

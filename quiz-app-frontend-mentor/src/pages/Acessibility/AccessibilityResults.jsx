@@ -1,3 +1,5 @@
+
+
 import { useContext } from "react"
 import RightQuestions from "../../context/RightQuestions"
 import TitleFinished from "../../components/TitleFinished/TitleFinished"
@@ -6,13 +8,13 @@ import iconImg from "../../assets/icon-html.svg"
 import ButtonFinished from "../../components/ButtonFinished/ButtonFinished"
 
 
-export default function HtmlResults(){
+export default function AccessibilityResults(){
     const objRightQuestions = useContext(RightQuestions)
     return (
         <div className="containerMainFinished" style={{display: "flex", justifyContent: "space-between"}}>
             <TitleFinished/>
             <div>
-               <CardFinished srcImg={iconImg} title="Html" correctAnwers={objRightQuestions.rightQuestions} />
+               <CardFinished srcImg={iconImg} title="Accessibility" correctAnwers={objRightQuestions.rightQuestions} />
                 <ButtonFinished textButton="Play Again" />
             </div>
         </div>

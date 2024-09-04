@@ -13,3 +13,10 @@
     width: 200px;
     height: 3px;
 }
+
+@media(max-width: 800px){
+    .divQuestion >h2{
+        margin-bottom: 2rem;
+        width: 80vw;
+    }
+}

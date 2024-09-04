@@ -26,3 +26,12 @@
 .fBodyS{
     font: italic 400 0.75rem/1.5 "Rubik", sans-serif; 
 }
+
+@media (max-width: 500px){
+    .fHeadingLRegular{
+        font: 400 3rem/1 "Rubik", sans-serif; 
+    }
+    .fHeadingLBold{
+        font: 700 3rem/1 "Rubik", sans-serif; 
+    }
+}

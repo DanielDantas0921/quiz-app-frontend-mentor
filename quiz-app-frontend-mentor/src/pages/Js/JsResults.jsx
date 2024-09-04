@@ -6,13 +6,13 @@ import iconImg from "../../assets/icon-html.svg"
 import ButtonFinished from "../../components/ButtonFinished/ButtonFinished"
 
 
-export default function HtmlResults(){
+export default function JsResults(){
     const objRightQuestions = useContext(RightQuestions)
     return (
         <div className="containerMainFinished" style={{display: "flex", justifyContent: "space-between"}}>
             <TitleFinished/>
             <div>
-               <CardFinished srcImg={iconImg} title="Html" correctAnwers={objRightQuestions.rightQuestions} />
+               <CardFinished srcImg={iconImg} title="JavaScript" correctAnwers={objRightQuestions.rightQuestions} />
                 <ButtonFinished textButton="Play Again" />
             </div>
         </div>

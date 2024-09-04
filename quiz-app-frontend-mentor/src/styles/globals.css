@@ -18,6 +18,7 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem 4rem;
 }
 
 .titleAndSwitcher{
@@ -128,4 +129,32 @@ body{
 
 .error{
   border: 3px solid #EE5454;
+}
+
+.containerMainFinished{
+  display: flex;
+  gap: 2rem;
+}
+
+
+
+
+@media (max-width: 800px){
+  .container{
+    max-width: 80vw;
+  }
+  .mainQuestionAndOptionDiv{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .containerMainFinished{
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 500px){
+  #root{
+   background-image: none;
+  }
 }
