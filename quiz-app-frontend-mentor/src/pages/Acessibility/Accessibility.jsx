@@ -7,7 +7,7 @@ import RightQuestions from "../../context/RightQuestions";
 export default function Accessibility(){
     const [rightQuestions, setRightQuestions] = useState(0)
     return (
-        <div className="container">
+        <div className="containerQuestions">
         <TitleAndSwitcher iconTitle={htmlIcon} title="Accessibility" />
         <RightQuestions.Provider value={{rightQuestions,setRightQuestions}}>
         <Outlet />

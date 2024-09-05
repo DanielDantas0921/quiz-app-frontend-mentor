@@ -10,7 +10,11 @@ fazer a lógica da progressBar
 
 ------------------------------
 
-fazer a lógica da progressBar
+terminar o responsivo (
+    corrigir responsivo das questions para celular o titulo + switcher ta ocupando muito espaço para celular e ta ficando um scrol lateral
+    corrigir distribuição de espaço dentro do option das perguntas por que os ícones estão ficando fora quando o texto é muito grande
+    fazer responsivo do results
 
-ver como vai refatorar se vai criar um hook próprio para diminuir o código do HtmlQuestions
+
+)
 

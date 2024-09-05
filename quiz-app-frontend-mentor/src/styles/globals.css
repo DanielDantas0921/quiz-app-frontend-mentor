@@ -15,6 +15,17 @@ body{
   background-color: #ffffff;
 }
 
+.containerStart{
+  max-width: 1200px;
+   padding: 0rem 4rem;
+  margin: 0 auto;
+}
+.containerQuestions{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -113,6 +124,7 @@ body{
   .mainQuestionAndOptionDiv{
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
   }
 
   .optionAndButtonDiv{
@@ -140,6 +152,11 @@ body{
 
 
 @media (max-width: 800px){
+  .containerStart{
+   
+    max-width: 90vw;
+    padding: 0rem 2rem;
+  }
   .container{
     max-width: 80vw;
   }
@@ -156,5 +173,9 @@ body{
 @media (max-width: 500px){
   #root{
    background-image: none;
+  }
+
+  .container{
+    max-width: 90vw;
   }
 }

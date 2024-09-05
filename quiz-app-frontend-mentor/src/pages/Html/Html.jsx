@@ -7,7 +7,7 @@ import RightQuestions from "../../context/RightQuestions";
 export default function Html(){
     const [rightQuestions, setRightQuestions] = useState(0)
     return (
-        <div className="container">
+        <div className="containerQuestions">
         <TitleAndSwitcher iconTitle={htmlIcon} title="Html" />
         <RightQuestions.Provider value={{rightQuestions,setRightQuestions}}>
         <Outlet />

@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom"
 export default function Css(){
     const [rightQuestions, setRightQuestions] = useState(0)
     return (
-        <div className="container">
+        <div className="containerQuestions">
         <TitleAndSwitcher iconTitle={cssIcon} title="Css" />
         <RightQuestions.Provider value={{rightQuestions,setRightQuestions}}>
         <Outlet />

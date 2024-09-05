@@ -10,10 +10,10 @@ import TitleAndSwitcher from "../../components/TitleAndSwitcher/TitleAndSwitcher
 
 export default function Start() {
   return (
-    <div className= "container ">
+    <div className= "containerStart">
      <TitleAndSwitcher/>
       <div className={styles.main}>
-        <div>
+        <div className={styles.divH1Andp}>
           <h1 className="fHeadingLRegular">Welcome to the<br/> <span className="fHeadingLBold">Frontend Quiz!</span></h1>
           <p className="fBodyS">Pick a subject to get started.</p>
         </div>

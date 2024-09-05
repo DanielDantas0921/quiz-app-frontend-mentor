@@ -1,7 +1,7 @@
 .divOption{
     display: flex;
     gap: 2rem;
-    width: 35rem;
+    width: 100%;
     height: 6.25rem;
     align-items: center;
     box-shadow: 0 16px 20px 0 rgba(143,160,193, 30%);
@@ -12,6 +12,6 @@
 
 @media (max-width:800px){
     .divOption{
-        width: 80vw;
+        width: 70vw;
     }
 }

@@ -7,7 +7,7 @@ import RightQuestions from "../../context/RightQuestions";
 export default function Js(){
     const [rightQuestions, setRightQuestions] = useState(0)
     return (
-        <div className="container">
+        <div className="containerQuestions">
         <TitleAndSwitcher iconTitle={htmlIcon} title="JavaScript" />
         <RightQuestions.Provider value={{rightQuestions,setRightQuestions}}>
         <Outlet />
