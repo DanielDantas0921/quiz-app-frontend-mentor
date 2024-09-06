@@ -10,8 +10,9 @@
     margin-bottom: 10rem;
 }
 .progressBar{
-    width: 200px;
+    width: 100%;
     height: 3px;
+    background-color: #ede4e4;
 }
 
 @media(max-width: 800px){

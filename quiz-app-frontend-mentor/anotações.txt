@@ -10,11 +10,9 @@ fazer a lógica da progressBar
 
 ------------------------------
 
-terminar o responsivo (
-    corrigir responsivo das questions para celular o titulo + switcher ta ocupando muito espaço para celular e ta ficando um scrol lateral
-    corrigir distribuição de espaço dentro do option das perguntas por que os ícones estão ficando fora quando o texto é muito grande
-    fazer responsivo do results
+fazer o hover da option para selecionar ele ()
+arrumar lógica para ele aceitar apenas uma resposta
+arrumar lógica para ele resetar a letra quando troca de questão 
+fazer alguma lógica para mostrar que tem que responder alguma questão se nada tiver selecionado
 
-
-)
 

@@ -171,11 +171,25 @@ body{
 }
 
 @media (max-width: 500px){
+  .titleAndSwitcher{
+    padding: 2rem 0;
+  }
   #root{
    background-image: none;
   }
 
   .container{
     max-width: 90vw;
+  }
+  .containerQuestions{
+    width: 82vw;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .titleAndSwitcher{
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
   }
 }

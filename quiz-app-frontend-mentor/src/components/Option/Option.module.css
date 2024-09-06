@@ -8,12 +8,19 @@
     align-items: center;
     grid-template-columns: auto 1fr auto;
     gap: 2rem;
-    width: 30rem;
+    width: 100%;
     box-shadow: 0 16px 40px 0 rgba(143,160,193,14%);
     padding: 0.8rem;
     border-radius: 24px;
     
 }
+.letter{
+    border-radius: 8px;
+}
+.divOption:hover .letter{
+    background-color: #F6E7FF;
+}
+
 .divOption img{
     justify-self: end;
 }
@@ -33,6 +40,8 @@
 }
 
 @media (max-width: 500px){
-
+    .divOption{
+        width: 100%;
+    }
 }
 

@@ -50,6 +50,7 @@ export default function useQuizz(selectedQuiz){
             }
           } else {
             setCurrentQuestionNumber((currentState) => (currentState = currentState + 1));
+            setAnswerOptionQuestion((currentState)=> currentState = null)
             if(currentQuestionNumber == 9){
               navigate("/" + selectedQuiz + "/Results")
             }
